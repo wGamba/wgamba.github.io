@@ -16,27 +16,27 @@
         }
         .container {
             display: flex;
-            max-width: 1500px; /* Aumenta el ancho total */
+            max-width: 1500px;
             margin: auto;
             padding: 20px;
-            justify-content: space-between; /* Separa el texto y la imagen */
+            justify-content: space-between;
         }
         
         .text-content {
             flex: 1;
-            min-width: 500px; /* Evita que el texto se reduzca demasiado */
+            min-width: 500px;
         }
         
         .profile-image {
-            flex-shrink: 0; /* Evita que la imagen se reduzca */
+            flex-shrink: 0;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .profile-image img {
-            width: 1000px; /* Ajusta según tu preferencia */
+            width: 1000px;
             height: 1000px;
-            object-fit: cover; /* Asegura que la imagen llene el cuadro sin deformarse */
+            object-fit: cover;
             border-radius: 10px;
         }
         h1, h2, h3 {
@@ -58,9 +58,11 @@
             filter: grayscale(1);
         }
         .social-icons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
             display: flex;
             gap: 15px;
-            margin-top: 20px;
         }
         .social-icons img {
             width: 40px;
@@ -132,24 +134,22 @@
                 </div>
             </div>
             
-            <h2>Social Media</h2>
-            <div class="social-icons">
-                <a href="https://instagram.com/francopa" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111491.png" alt="Instagram">
-                </a>
-                <a href="https://x.com/francop_bvb" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111819.png" alt="X">
-                </a>
-                <a href="https://discord.com/users/xfrancop" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968968.png" alt="Discord">
-                </a>
-            </div>
-            
             <p>Contact me at: <a href="mailto:fpa936@gmail.com">fpa936@gmail.com</a></p>
         </div>
         <div class="profile-image">
             <img src="https://steamuserimages-a.akamaihd.net/ugc/50198202382408539/9DDF781F9B1A4A35C4DC2B624571FF86BEB9CB35/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="Profile Image">
         </div>
+    </div>
+    <div class="social-icons">
+        <a href="https://instagram.com/francopa" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111491.png" alt="Instagram">
+        </a>
+        <a href="https://x.com/francop_bvb" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111819.png" alt="X">
+        </a>
+        <a href="https://discord.com/users/xfrancop" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968968.png" alt="Discord">
+        </a>
     </div>
 </body>
 </html>
