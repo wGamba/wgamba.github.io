@@ -83,6 +83,8 @@
             width: 40px;
             height: 40px;
             filter: grayscale(1);
+            max-width: 100%; /* Asegurar que la imagen se ajuste correctamente */
+            height: auto; /* Mantener la proporción de la imagen */
         }
 
         .social-icons {
@@ -137,16 +139,34 @@
                 font-size: 1.5em; /* Ajustar el tamaño de fuente en pantallas más pequeñas */
             }
 
+            .first-section {
+                background-position: center; /* Centra la imagen en móviles */
+                background-size: cover; /* Ajusta la imagen para que cubra toda la sección en móviles */
+            }
+
             .combined-section {
                 flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+                gap: 20px; /* Espacio reducido entre columnas */
             }
 
             .skills-container {
                 flex-direction: column; /* Las habilidades se apilan verticalmente */
+                align-items: center; /* Centrar las habilidades */
             }
 
             .skill {
                 justify-content: center; /* Centrar las habilidades */
+                margin: 10px 0; /* Espacio vertical entre habilidades */
+            }
+
+            .social-icons {
+                bottom: 10px; /* Aumentar el espacio desde el fondo */
+                right: 10px; /* Aumentar el espacio desde la derecha */
+            }
+
+            .social-icons img {
+                width: 35px; /* Reducir el tamaño de los íconos */
+                height: 35px; /* Reducir el tamaño de los íconos */
             }
         }
     </style>
@@ -225,20 +245,4 @@
     </div>
 
     <div class="contact">
-        <p>Contact me at: <a href="mailto:fpa936@gmail.com">fpa936@gmail.com</a></p>
-    </div>
-
-    <div class="social-icons">
-        <a href="https://instagram.com/francoprietoa" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111491.png" alt="Instagram">
-        </a>
-        <a href="https://x.com/francop_bvb" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111819.png" alt="X">
-        </a>
-        <a href="https://discord.com/users/xfrancop" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968968.png" alt="Discord">
-        </a>
-    </div>
-
-</body>
-</
+        <p>Contact me at: <a href="mailto:fpa936@gmail.com">fpa936@gmail.com</a></
