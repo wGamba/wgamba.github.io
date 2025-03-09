@@ -5,59 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Perfil de GitHub</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
-        
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+
         body {
-            font-family: 'Pirata One', cursive;
+            font-family: 'Rubik Burned', cursive; /* Cambiada a Rubik Burned */
             background-color: #000;
             color: #fff;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            overflow-x: hidden;
         }
-        .container {
-            display: flex;
-            max-width: 1500px;
-            margin: auto;
-            padding: 20px;
-            justify-content: space-between;
-        }
-        
-        .text-content {
-            flex: 1;
-            min-width: 500px;
-        }
-        
-        .profile-image {
-            flex-shrink: 0;
+
+        .section {
+            min-height: 100vh; 
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-left: 200px; 
+            padding: 40px;
+            background-size: cover;
+            position: relative;
         }
-        .profile-image img {
-            width: 1000px;
-            height: 1000px;
-            object-fit: cover;
+
+        .first-section {
+            background-color: #000; /* Cambia el fondo a negro */
+            background-image: url('https://steamuserimages-a.akamaihd.net/ugc/50198202382408539/9DDF781F9B1A4A35C4DC2B624571FF86BEB9CB35/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true');
+            background-position: calc(100% + 500px) center; /* Mueve la imagen a la derecha */
+            background-repeat: no-repeat; /* Asegura que la imagen no se repita */
+            background-size: auto 100%; /* Ajusta la imagen para que mantenga la proporción */
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
             border-radius: 10px;
+            background: none;
         }
+
+        h1, h2, h3, p {
+            background: none;
+            font-size: 2em;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 2.5em;
+        }
+
+        h3 {
+            font-size: 2.2em;
+        }
+
+        p {
+            font-size: 1.8em;
+        }
+
         h1, h2, h3 {
             text-align: left;
         }
+
         .skills-container {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
         }
+
         .skill {
             display: flex;
             align-items: center;
             gap: 10px;
         }
+
         .skill img {
             width: 40px;
             height: 40px;
             filter: grayscale(1);
         }
+
         .social-icons {
             position: fixed;
             bottom: 20px;
@@ -65,82 +92,123 @@
             display: flex;
             gap: 15px;
         }
+
         .social-icons img {
             width: 40px;
             height: 40px;
             filter: brightness(0) invert(1);
             transition: transform 0.2s ease-in-out;
         }
+
         .social-icons img:hover {
             transform: scale(1.1);
+        }
+
+        .combined-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px; /* Espacio entre las dos columnas */
+            margin-top: 40px; /* Espacio entre la sección superior y esta */
+            padding: 20px;
+            border: 2px solid #fff; /* Borde blanco para el recuadro */
+            border-radius: 10px; /* Esquinas redondeadas */
+        }
+
+        .left-column,
+        .right-column {
+            flex: 1; /* Ambas columnas ocupan el mismo espacio */
+        }
+
+        .left-column h2,
+        .right-column h2 {
+            margin-bottom: 10px; /* Espacio inferior para los títulos */
+        }
+
+        .contact {
+            margin-top: 40px; /* Espacio superior para la sección de contacto */
+            text-align: center; /* Centrar el texto */
+            font-size: 1.5em; /* Tamaño de fuente más pequeño para el contacto */
+            padding: 20px; /* Espaciado adicional */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="text-content">
-            <h1 class="glitch"> Hi, I´m wGamba</h1>
-            <h2>About Me</h2>
-            <p>I am an informatics engineering student, currently halfway through my degree. I am expanding my knowledge in both back-end and front-end development. I love technology and I am very curious. I want to specialize in pentesting.</p>
-            
-            <h2>Currently Learning</h2>
-            <p>Python, PHP, and Angular.</p>
-            
-            <h2>Outside Technology</h2>
-            <p>I enjoy watching movies, playing games, playing soccer, listening to music, and building computers.</p>
-            <p>My dream is to visit the Westfalenstadion to watch a Borussia Dortmund match.</p>
-            
-            <h2>My Skills</h2>
-            <h3>Languages</h3>
-            <div class="skills-container">
-                <div class="skill">
-                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="Java">
-                    <p>Java</p>
-                </div>
-                <div class="skill">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML5">
-                    <p>HTML5</p>
-                </div>
-            </div>
-            
-            <h3>Other Tools & Technologies</h3>
-            <div class="skills-container">
-                <div class="skill">
-                    <img src="https://cdn-icons-png.flaticon.com/512/4494/4494748.png" alt="GIT">
-                    <p>GIT</p>
-                </div>
-                <div class="skill">
-                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968875.png" alt="JIRA">
-                    <p>JIRA</p>
-                </div>
-                <div class="skill">
-                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968364.png" alt="SQL Server">
-                    <p>SQL Server</p>
-                </div>
-            </div>
-            
-            <h3>Languages</h3>
-            <div class="skills-container">
-                <div class="skill">
-                    <img src="https://cdn-icons-png.flaticon.com/512/197/197593.png" alt="Spanish">
-                    <p>Spanish 100%</p>
-                </div>
-                <div class="skill">
-                    <img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="English">
-                    <p>English 90%</p>
-                </div>
-                <div class="skill">
-                    <img src="https://cdn-icons-png.flaticon.com/512/197/197571.png" alt="German">
-                    <p>German 10%</p>
-                </div>
-            </div>
-            
-            <p>Contact me at: <a href="mailto:fpa936@gmail.com">fpa936@gmail.com</a></p>
-        </div>
-        <div class="profile-image">
-            <img src="https://steamuserimages-a.akamaihd.net/ugc/50198202382408539/9DDF781F9B1A4A35C4DC2B624571FF86BEB9CB35/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="Profile Image">
+
+    <div class="section first-section">
+        <div class="container">
+            <h1 class="glitch">Hi, I´m wGamba</h1>
+            <h2>Informatic Engineering Student</h2>
+            <p>On the journey to full-stack development, enjoying the process.</p>
         </div>
     </div>
+
+    <div class="section">
+        <div class="container combined-section">
+            <div class="left-column">
+                <h2>About Me</h2>
+                <p>I am an informatics engineering student, currently halfway through my degree. I am expanding my knowledge in both back-end and front-end development. I love technology and I am very curious. I want to specialize in pentesting.</p>
+                
+                <h2>Currently Learning</h2>
+                <p>Python, PHP, and Angular.</p>
+                
+                <h2>Outside Technology</h2>
+                <p>I enjoy watching movies, playing games, playing soccer, listening to music, and building computers.</p>
+                <p>My dream is to visit the Westfalenstadion to watch a Borussia Dortmund match.</p>
+            </div>
+
+            <div class="right-column">
+                <h2>My Skills</h2>
+                <h3>Languages</h3>
+                <div class="skills-container">
+                    <div class="skill">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="Java">
+                        <p>Java</p>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML5">
+                        <p>HTML5</p>
+                    </div>
+                </div>
+                
+                <h3>Other Tools & Technologies</h3>
+                <div class="skills-container">
+                    <div class="skill">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4494/4494748.png" alt="GIT">
+                        <p>GIT</p>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968875.png" alt="JIRA">
+                        <p>JIRA</p>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968364.png" alt="SQL Server">
+                        <p>SQL Server</p>
+                    </div>
+                </div>
+                
+                <h3>Languages</h3>
+                <div class="skills-container">
+                    <div class="skill">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197593.png" alt="Spanish">
+                        <p>Spanish 100%</p>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="English">
+                        <p>English 90%</p>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197571.png" alt="German">
+                        <p>German 10%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <p>Contact me at: <a href="mailto:fpa936@gmail.com">fpa936@gmail.com</a></p>
+    </div>
+
     <div class="social-icons">
         <a href="https://instagram.com/francoprietoa" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/2111/2111491.png" alt="Instagram">
@@ -152,5 +220,6 @@
             <img src="https://cdn-icons-png.flaticon.com/512/5968/5968968.png" alt="Discord">
         </a>
     </div>
+
 </body>
 </html>
