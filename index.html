@@ -29,7 +29,7 @@
         .first-section {
             background-color: #000; /* Cambia el fondo a negro */
             background-image: url('https://steamuserimages-a.akamaihd.net/ugc/50198202382408539/9DDF781F9B1A4A35C4DC2B624571FF86BEB9CB35/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true');
-            background-position: calc(100% + 500px) center; /* Mueve la imagen a la derecha */
+            background-position: calc(100% + 450px) center; /* Mueve la imagen a la derecha */
             background-repeat: no-repeat; /* Asegura que la imagen no se repita */
             background-size: auto 100%; /* Ajusta la imagen para que mantenga la proporción */
         }
@@ -130,6 +130,25 @@
             font-size: 1.5em; /* Tamaño de fuente más pequeño para el contacto */
             padding: 20px; /* Espaciado adicional */
         }
+
+        /* Media Queries para responsividad */
+        @media (max-width: 768px) {
+            h1, h2, h3, p {
+                font-size: 1.5em; /* Ajustar el tamaño de fuente en pantallas más pequeñas */
+            }
+
+            .combined-section {
+                flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+            }
+
+            .skills-container {
+                flex-direction: column; /* Las habilidades se apilan verticalmente */
+            }
+
+            .skill {
+                justify-content: center; /* Centrar las habilidades */
+            }
+        }
     </style>
 </head>
 <body>
@@ -222,4 +241,4 @@
     </div>
 
 </body>
-</html>
+</
